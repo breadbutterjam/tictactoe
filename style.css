@@ -1,3 +1,14 @@
+.gameId{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 4px;
+    background-color: lightgrey;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+
 
 .centerAlign{
     width: 50%;
@@ -7,13 +18,26 @@
     text-align: center;
     padding-top: 20px;
 }
+.flexContainer{
+    display: flex;
+}
+
+.dontShowAtStart{
+    display: none;
+}
+
+.gameIdCont{
+    width: 30%;
+}
 
 .cols{
     background-color: #f1f1f1;
     margin: 0.3em;
     padding: 0px;
-    display: flex;
     flex-direction: column;
+}
+
+.enabled{
     cursor: pointer;
 }
 
@@ -24,7 +48,7 @@
     border: 1px solid;
 }
 
-.cols:hover{
+.cols_Hovered{
     background-color: #e1faff;
 }
 
@@ -32,6 +56,24 @@
     background-color: #00d5ff;
 }
 
-.player2Fill{
+.player2Fill, .player2Filled{
     background-color: seagreen;
+}
+
+@media only screen and (max-width: 600px) {
+.statusMessage
+{
+    max-width: 50vw;
+}
+
+.cols{
+    margin-right: 1px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .cells{
+    padding: 11px;
+} */
 }
